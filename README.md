@@ -3,7 +3,7 @@
 Simple Spring authentication Project with JWT and MySQL for learning purpose
 
 ## How to setup
-Create a mysql database for example with Docker:
+Create a mysql database for example with [Docker](https://docker.com):
 ```bash
 docker run -d -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=taskdb --name mysqldb -p 3307:3306 mysql:8.0
 ```
