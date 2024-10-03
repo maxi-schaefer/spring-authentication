@@ -1,3 +1,4 @@
+![](./banner.png)
 # Spring Authentication with JWT and MySQL
 Simple Spring authentication Project with JWT and MySQL for learning purpose
 
