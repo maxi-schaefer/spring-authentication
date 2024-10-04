@@ -6,12 +6,12 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 /**
  * @author Max
- * @since 10/3/2024
+ * @since 10/4/2024
  */
 
 @Getter
 @Setter
-public class LoginResponse {
+public class RegisterResponse {
 
     private UserDetails user;
     private String token;
