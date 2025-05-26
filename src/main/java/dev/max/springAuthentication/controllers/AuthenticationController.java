@@ -35,6 +35,7 @@ public class AuthenticationController {
         registerResponse.setToken(jwtToken);
         registerResponse.setExpiresIn(jwtService.getJwtExpiration());
 
+        System.out.println(registerResponse);
         return ResponseEntity.ok(registerResponse);
     }
 

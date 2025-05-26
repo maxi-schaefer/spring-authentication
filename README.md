@@ -29,18 +29,21 @@ Request:
 Response:
 ```json
 {
-    "id": "8a82b65b-ede5-42b9-b2c0-ec2a536294c7",
+  "user": {
+    "id": "fda77ad1-4575-40c1-9ff4-be9f3a01da8e",
     "fullName": "John Doe",
     "email": "johndoe@mail.com",
-    "password": "$2a$10$uPjEmhySIPDjTXblP2bdf.cw4Io.76XLdndDF0/9e4QPHdWWUfcc6",
-    "createdAt": "2024-10-03T15:02:09.873+00:00",
-    "updatedAt": "2024-10-03T15:02:09.873+00:00",
+    "createdAt": "2025-05-26T22:35:02.652+00:00",
+    "updatedAt": "2025-05-26T22:35:02.652+00:00",
     "enabled": true,
     "authorities": [],
     "username": "johndoe@mail.com",
-    "accountNonLocked": true,
+    "credentialsNonExpired": true,
     "accountNonExpired": true,
-    "credentialsNonExpired": true
+    "accountNonLocked": true
+  },
+  "token": "TOKEN",
+  "expiresIn": 3600000
 }
 ```
 
@@ -55,8 +58,21 @@ Request:
 Response:
 ```json
 {
-    "token": "USERS_TOKEN",
-    "expiresIn": 3600000
+  "user": {
+    "id": "fda77ad1-4575-40c1-9ff4-be9f3a01da8e",
+    "fullName": "John Doe",
+    "email": "johndoe@mail.com",
+    "createdAt": "2025-05-26T22:35:02.652+00:00",
+    "updatedAt": "2025-05-26T22:35:02.652+00:00",
+    "enabled": true,
+    "authorities": [],
+    "username": "johndoe@mail.com",
+    "credentialsNonExpired": true,
+    "accountNonExpired": true,
+    "accountNonLocked": true
+  },
+  "token": "TOKEN",
+  "expiresIn": 3600000
 }
 ```
 
@@ -65,20 +81,19 @@ Request: Header with Bearer Authorization
 Response:
 ```json
 [
-    {
-        "id": "8a82b65b-ede5-42b9-b2c0-ec2a536294c7",
-        "fullName": "John Doe",
-        "email": "johndoe@mail.com",
-        "password": "$2a$10$uPjEmhySIPDjTXblP2bdf.cw4Io.76XLdndDF0/9e4QPHdWWUfcc6",
-        "createdAt": "2024-10-03T15:02:09.873+00:00",
-        "updatedAt": "2024-10-03T15:02:09.873+00:00",
-        "enabled": true,
-        "authorities": [],
-        "username": "johndoe@mail.com",
-        "accountNonLocked": true,
-        "accountNonExpired": true,
-        "credentialsNonExpired": true
-    }
+  {
+    "id": "fda77ad1-4575-40c1-9ff4-be9f3a01da8e",
+    "fullName": "John Doe",
+    "email": "johndoe@mail.com",
+    "createdAt": "2025-05-26T22:35:02.652+00:00",
+    "updatedAt": "2025-05-26T22:35:02.652+00:00",
+    "enabled": true,
+    "authorities": [],
+    "username": "johndoe@mail.com",
+    "credentialsNonExpired": true,
+    "accountNonExpired": true,
+    "accountNonLocked": true
+  }
 ]
 ```
 
@@ -87,17 +102,16 @@ Request: Header with Bearer Authorization
 Response:
 ```json
 {
-    "id": "8a82b65b-ede5-42b9-b2c0-ec2a536294c7",
-    "fullName": "John Doe",
-    "email": "johndoe@mail.com",
-    "password": "$2a$10$uPjEmhySIPDjTXblP2bdf.cw4Io.76XLdndDF0/9e4QPHdWWUfcc6",
-    "createdAt": "2024-10-03T15:02:09.873+00:00",
-    "updatedAt": "2024-10-03T15:02:09.873+00:00",
-    "enabled": true,
-    "authorities": [],
-    "username": "johndoe@mail.com",
-    "accountNonLocked": true,
-    "accountNonExpired": true,
-    "credentialsNonExpired": true
+  "id": "fda77ad1-4575-40c1-9ff4-be9f3a01da8e",
+  "fullName": "John Doe",
+  "email": "johndoe@mail.com",
+  "createdAt": "2025-05-26T22:35:02.652+00:00",
+  "updatedAt": "2025-05-26T22:35:02.652+00:00",
+  "enabled": true,
+  "authorities": [],
+  "username": "johndoe@mail.com",
+  "credentialsNonExpired": true,
+  "accountNonExpired": true,
+  "accountNonLocked": true
 }
 ```
